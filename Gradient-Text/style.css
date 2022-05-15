@@ -1,0 +1,12 @@
+.text {
+    background:
+      linear-gradient(120deg, #6c63ff, #f50057);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: grayscale(100%);
+    transition: filter 800ms;
+  }
+  .text:hover {
+    filter: grayscale(0%);
+  }
