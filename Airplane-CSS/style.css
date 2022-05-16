@@ -1,0 +1,46 @@
+.frame,
+.circle,
+.path {
+  width: 500px;
+  height: 500px;
+}
+.path,
+.circle {
+  top: 250px;
+  right: 250px;
+  border-radius: 50%;
+}
+.frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.path {
+  position: absolute;
+  border: 6px dashed #311919;
+}
+
+.circle {
+  position: absolute;
+}
+
+.object {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.circle {
+  animation: rotate 5s infinite linear;
+}
