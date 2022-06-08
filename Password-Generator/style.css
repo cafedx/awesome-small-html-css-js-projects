@@ -1,62 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f8f8f8;
-}
-
-.inputBox {
-    position: relative;
-    width: 450px;
-}
-
-.inputBox h2 {
-    font-size: 28px;
-    color: #333;
-}
-
-.inputBox input::placeholder {
-    letter-spacing: 0px;
-}
-
-.inputBox input {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    border: none;
-    margin: 15px 0 20px;
-    background: transparent;
-    outline: none;
-    padding: 0 20px;
-    font-size: 24px;
-    letter-spacing: 4px;
     box-sizing: border-box;
-    border-radius: 8px;
-    color: #333;
-    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.05),
-        inset -4px -4px 10 px rgba(255, 255, 255, 1),
-        4px 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
 }
 
-.inputBox #btn {
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    padding: 20px 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url("./steve.jpg") center / cover no-repeat;
+}
+
+.container .input-data {
+    margin: 20px 5px 15px 5px;
+}
+
+.input-data .display {
+    height: 45px;
+    width: 100%;
+    display: flex;
     position: relative;
-    cursor: pointer;
-    color: #fff;
-    background: #333;
-    font-size: 24px;
-    display: inline-block;
-    padding: 10px 15px;
+}
+
+.input-data .display input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    pointer-events: none;
+    user-select: none;
+    border: none;
     border-radius: 8px;
 }
 
-.inputBox #btn:active {
-    background: #0c27b0;
+.input-data .display span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: grey;
+    display: none;
+    cursor: pointer;
+}
+
+.input-data button {
+    display: block;
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    outline: none;
+    background: #1b1b1d;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+}
+
+.input-data button:active {
+    background: #6c63ff;
 }
