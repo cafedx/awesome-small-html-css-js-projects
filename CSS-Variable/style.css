@@ -1,37 +1,45 @@
-.container {
-    overflow-x: hidden;
-    width: 200px;
-    flex-direction: column;
-    justify-content: center;
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    margin: auto;
+    text-align: center;
+    background-color: #f8f9fa;
 }
 
 .menu-toggler {
     background: #ec406a;
+    color: #ffffff;
+    border: 0;
     border-radius: 10px;
     box-shadow: 0 5px #464749;
-    color: #ffffff;
-    width: 120px;
+    width: 140px;
     height: 45px;
     cursor: pointer;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
+    padding: 0 10px;
+    font-family: cursive;
+    outline: none;
 }
 
 .stagger-menu {
     list-style-type: none;
     margin: 16px 0;
+    padding: 0;
+    text-align: center;
 }
 
 .stagger-menu li {
     margin-bottom: 8px;
     font-size: 18px;
-    font-weight: bold;
-    text-align: center;
     opacity: 0;
     transform: translateY(-100%);
     transition-duration: 0.2s;
     direction: rtl;
+    font-family: "lalezar";
 }
 
 .menu-toggler:hover~.stagger-menu li {
