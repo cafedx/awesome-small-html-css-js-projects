@@ -19,12 +19,12 @@ section {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     border: 8px solid transparent;
-    animation: animate 5s linear infinite;
+    animation: animove 5s linear infinite;
     transform-origin: bottom center;
     animation-play-state: run;
 }
 
-@keyframes animate {
+@keyframes animove {
     0% {
         transform: rotate(0deg);
     }
@@ -70,11 +70,11 @@ section {
     height: 60px;
     background: rgba(255, 255, 255, 0.05);
     transform-origin: center;
-    animation: animateBowlShadow 5s linear infinite;
+    animation: anibowlshadow 5s linear infinite;
     animation-play-state: running;
 }
 
-@keyframes animateBowlShadow {
+@keyframes anibowlshadow {
     0% {
         left: 50%;
         width: 150px;
@@ -113,11 +113,11 @@ section {
     border-bottom-right-radius: 150px;
     filter: drop-shadow(0 0 80px #1ae907);
     transform-origin: top center;
-    animation: animateLiquid 5s linear infinite;
+    animation: aniliquid 5s linear infinite;
     animation-play-state: running;
 }
 
-@keyframes animateLiquid {
+@keyframes aniliquid {
     0% {
         transform: rotate(0deg);
     }
@@ -167,11 +167,11 @@ section {
     height: 40px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    animation: animteShadow 5s linear infinite;
+    animation: anishadow 5s linear infinite;
     animation-play-state: running;
 }
 
-@keyframes animteShadow {
+@keyframes anishadow {
     0% {
         left: 50%;
         width: 260px;
