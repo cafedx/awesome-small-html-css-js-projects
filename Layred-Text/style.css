@@ -1,0 +1,53 @@
+body {
+    background-color: #ffffff;
+}
+
+span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: "Copperplate", Fantasy;
+    font-size: 90px;
+    letter-spacing: 10px;
+    color: #6c63ff;
+    cursor: pointer;
+}
+
+span:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-image: repeating-linear-gradient(135deg,
+            transparent 0,
+            transparent 2px,
+            #3f3d56 2px,
+            #3f3d56 4px);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: -1;
+    -webkit-text-stroke: 2px #3f3d56;
+    transition: 0.5s;
+}
+
+span:hover:before {
+    top: 0.1em;
+    left: 0.1em;
+}
+
+span:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 2px #1b1b1d;
+    transition: 0.5s;
+}
+
+span:hover:after {
+    top: -0.1em;
+    left: -0.1em;
+}
