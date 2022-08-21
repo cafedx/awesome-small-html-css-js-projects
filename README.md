@@ -1,9 +1,11 @@
 # cafedx_com
-Instagram 
+### Instagram
 
-credit to:
+> Instagram course
+---
 
-https://1loc.dev/
-https://www.30secondsofcode.org/
-https://codingartistweb.com/
-Online Tutorials > Yotube
+**credit to**:
+- [1 LOC](https://1loc.dev)
+- [30 Seconds of Code](https://www.30secondsofcode.org)
+- [Coding Artist Web](https://codingartistweb.com)
+- [Online Tutorials](https://www.youtube.com/c/OnlineTutorials4Designers)
