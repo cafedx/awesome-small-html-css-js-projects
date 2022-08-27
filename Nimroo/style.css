@@ -1,0 +1,110 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4b927;
+}
+
+.wrapper {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 100px;
+    width: 180px;
+    background-color: #2a2a2a;
+    border-radius: 50px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 22px rgba(145, 106, 8 . 0.8);
+    outline: none;
+    cursor: pointer;
+}
+
+label {
+    height: 80px;
+    width: 80px;
+    perspective: 250px;
+    -webkit-perspective: 250px;
+    position: absolute;
+    top: 135px;
+    left: 95px;
+}
+
+.nimroo {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: right;
+    transition: 0.2s;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front {
+    background-color: #e8e0dc;
+}
+
+.front:before,
+.front:after,
+.back:after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.front:after {
+    height: 25px;
+    width: 27px;
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    transform: rotate(-35deg);
+}
+
+.front:before {
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(135deg, #f6b02f, #ea6f0c);
+    border-radius: 50%;
+}
+
+.back {
+    background-color: #cabfa9;
+    transform: rotateY(-180deg);
+    bottom: 100%;
+}
+
+.back:after {
+    height: 40px;
+    width: 40px;
+    background-color: #d8b886;
+    border-radius: 50%;
+}
+
+input:checked+label>.nimroo {
+    transform: rotateY(180deg);
+}
